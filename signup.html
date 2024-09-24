@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Surname" required>
+            <select required>
+                <option value="">Select Sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" placeholder="Aadhaar Number" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <input type="password" placeholder="Create Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <div class="otp-section">
+                <button type="button" id="generateOtp">Generate OTP</button>
+                <input type="text" placeholder="Enter OTP" required>
+            </div>
+            <div class="captcha-section">
+                <label for="captcha">Captcha: <span id="captchaText"></span></label>
+                <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
