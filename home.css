@@ -1,0 +1,147 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: absolute; /* Stick it to the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo container */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust the logo image */
+.logoimg {
+    width: 120px; /* Adjust the width based on your design */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the logo fits within the container */
+}
+
+/* Nav links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #F9B400;
+}
+
+/* Button styling for Get Started */
+.btn-get-started {
+    background-color: #F9B400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-get-started:hover {
+    background-color: #D18A00;
+}
+
+/* Content section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    height: 100vh; /* Full page height */
+    background-color: #F4F6FA;
+}
+
+.left-section {
+    max-width: 500px;
+}
+
+.left-section h1 {
+    font-size: 4rem;
+    color: #2A2A2A;
+}
+
+.left-section h3 {
+    font-size: 1.2rem;
+    color: #777;
+    margin: 20px 0;
+}
+
+.learn-more-btn {
+    background-color: #F9B400;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #D18A00;
+}
+
+/* Right section for the image */
+.right-section img {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Main section covers entire page height */
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #F4F6FA;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-section {
+    flex: 1;
+}
